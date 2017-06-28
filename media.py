@@ -6,7 +6,12 @@ class Movie():
 
     # init this class with 4 arguments:
     # movie title, poster image, youtube trailer, and story line
-    def __init__(self, movie_title, story_line, poster_image, trailer_youtube_url):
+    def __init__(
+            self,
+            movie_title,
+            story_line,
+            poster_image,
+            trailer_youtube_url):
         self.title = movie_title
         self.story_line = story_line
         self.poster_image_url = poster_image
@@ -15,3 +20,4 @@ class Movie():
     # make a class method to show a trailer
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
+
